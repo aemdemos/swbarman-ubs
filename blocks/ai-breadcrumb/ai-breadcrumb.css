@@ -1,0 +1,85 @@
+
+.ai-breadcrumb-wrapper .ai-breadcrumb > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb ul {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb li {
+  display: inline;
+  vertical-align: middle;
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb li::after {
+  content: " > ";
+  padding: 0 5px;
+  vertical-align: middle;
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb li:last-child::after {
+  content: "";
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb .button-container {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb .button {
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  vertical-align: middle;
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb .button-container::after {
+  content: " ↑";
+  font-size: 14px;
+  color: #666;
+  vertical-align: middle;
+}
+
+/* Ensure consistent vertical alignment */
+.ai-breadcrumb-wrapper .ai-breadcrumb p,
+.ai-breadcrumb-wrapper .ai-breadcrumb ul,
+.ai-breadcrumb-wrapper .ai-breadcrumb li,
+.ai-breadcrumb-wrapper .ai-breadcrumb .button-container,
+.ai-breadcrumb-wrapper .ai-breadcrumb .button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/* Adjust padding for alignment */
+.ai-breadcrumb-wrapper .ai-breadcrumb ul {
+  padding-left: 5px; /* Adjusted spacing */
+}
+
+.ai-breadcrumb-wrapper .ai-breadcrumb > div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}

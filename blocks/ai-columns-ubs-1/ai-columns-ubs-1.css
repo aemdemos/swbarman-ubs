@@ -1,0 +1,66 @@
+
+.ai-columns-ubs-1-wrapper {
+  display: flex;
+  gap: 20px; /* Gap between columns */
+  flex-wrap: wrap;
+}
+
+.ai-columns-ubs-1 {
+  display: flex;
+  flex-direction: row; /* Main row arrangement */
+  gap: 20px; /* Gap between items in each section */
+  width: 100%;
+}
+
+.ai-columns-ubs-1 > div:first-child {
+  flex: 1 1 20%; /* Adjust as needed for left column width */
+}
+
+.ai-columns-ubs-1 > div:last-child {
+  flex: 1 1 80%; /* Adjust as needed for right column width */
+  display: flex;
+  flex-direction: column; /* Ensure proper arrangement within the right section */
+  gap: 20px;
+}
+
+.ai-columns-ubs-1 > div:last-child > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side arrangement of text and images */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ai-columns-ubs-1 > div:last-child > div > p,
+.ai-columns-ubs-1 > div:last-child > div > h3,
+.ai-columns-ubs-1 > div:last-child > div > picture {
+  flex: 1 1 45%; /* Each text or image block takes about half of the available space */
+}
+
+.ai-columns-ubs-1 img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .ai-columns-ubs-1-wrapper {
+    flex-direction: column;
+  }
+
+  .ai-columns-ubs-1 {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+
+  .ai-columns-ubs-1 > div {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .ai-columns-ubs-1 > div:last-child > div {
+    flex-direction: column; /* Stack text and images vertically on smaller screens */
+  }
+
+  .ai-columns-ubs-1 > div:last-child > div > p,
+  .ai-columns-ubs-1 > div:last-child > div > h3,
+  .ai-columns-ubs-1 > div:last-child > div > picture {
+    flex: 1 1 100%; /* Each text or image block takes full width on smaller screens */
+  }
+}

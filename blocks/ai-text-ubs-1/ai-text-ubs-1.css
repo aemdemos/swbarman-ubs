@@ -1,0 +1,30 @@
+
+/* Styling for the ai-text-ubs-1 block */
+.ai-text-ubs-1-wrapper {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-text-ubs-1.block > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Ensure items are aligned to the top */
+}
+
+.ai-text-ubs-1.block h2#recent-event-highlights {
+  font-size: 1.5em; /* Ensure font size is consistent */
+  font-weight: normal; /* Set font weight to normal */
+  margin: 0;
+  padding-bottom: 0; /* Remove padding below text */
+}
+
+.ai-text-ubs-1.block h2#recent-event-highlights::after {
+  content: '';
+  display: block;
+  width: 30px; /* Adjust width to match visual length */
+  height: 1px; /* Adjust height to match the thin underline */
+  background-color: red;
+  margin-top: 2px; /* Adjust to control spacing */
+}

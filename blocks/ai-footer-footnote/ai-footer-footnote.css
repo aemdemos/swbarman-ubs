@@ -1,0 +1,69 @@
+
+.ai-footer-footnote-wrapper {
+  background-color: #f8f7f4; /* Match the light background color */
+  padding: 20px; /* Add padding around the container */
+  font-family: Arial, sans-serif; /* Set font family */
+  font-size: 14px; /* Set font size */
+  color: #333; /* Set text color */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote {
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Ensure elements are stacked vertically */
+  gap: 20px; /* Add space between sections */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote > div {
+  display: flex; /* Use Flexbox */
+  flex-direction: row; /* Ensure elements are side by side */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center align items vertically */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote ul {
+  display: flex; /* Use Flexbox for horizontal alignment */
+  flex-direction: row; /* Ensure list items are side by side */
+  gap: 10px; /* Space between items */
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote ul li {
+  display: inline; /* Display items inline */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote ul li:not(:last-child)::after {
+  content: "|"; /* Add vertical bar separator */
+  margin-left: 10px; /* Space after separator */
+  color: #333; /* Separator color */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set link color to dark */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote h3 {
+  margin-top: 20px; /* Add margin above heading */
+  font-weight: bold; /* Set font weight for headings */
+  color: #000; /* Set heading color */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote p {
+  line-height: 1.5; /* Set line height */
+  margin: 10px 0; /* Set margin for paragraphs */
+  color: #333; /* Set text color */
+}
+
+.ai-footer-footnote-wrapper .ai-footer-footnote p a {
+  color: red; /* Set color for special links */
+  text-decoration: underline; /* Underline special links */
+}
+
+/* Ensure the block spans the entire width of the page if needed */
+.ai-footer-footnote-container > .ai-footer-footnote-wrapper {
+  max-width: unset;
+  padding: 0;
+}

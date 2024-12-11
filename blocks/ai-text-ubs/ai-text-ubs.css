@@ -1,0 +1,34 @@
+
+.ai-text-ubs-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0;
+}
+
+.ai-text-ubs {
+  max-width: 800px;
+}
+
+.ai-text-ubs > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-text-ubs h2 {
+  margin-bottom: 0;
+  font-weight: normal; /* Adjust font weight to normal */
+  font-size: 1.8em; /* Adjust font size to match original */
+}
+
+.ai-text-ubs h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  border-bottom: 3px solid red;
+  margin-top: 2px; /* Reduce margin to create closer spacing */
+}
+
+.ai-text-ubs p {
+  margin-top: 10px; /* Adjust margin between title and paragraph */
+}
